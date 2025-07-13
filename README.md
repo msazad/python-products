@@ -31,13 +31,15 @@ A simple RESTful API for managing products and product reviews. Built using Djan
 ```bash
 # 1. Clone the project
 git clone https://github.com/msazad/python-products.git
-cd product-review-api
+cd python-products
 
 # 2. Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # 3. Install dependencies
+
+pip freeze > requirements.txt
 pip install -r requirements.txt
 
 # 4. Run migrations
@@ -47,7 +49,7 @@ python manage.py migrate
 python manage.py createsuperuser
 
 # 6. Run the server
-python review/manage.py runserver
+python manage.py runserver
 
 
 🔑 API Endpoints
